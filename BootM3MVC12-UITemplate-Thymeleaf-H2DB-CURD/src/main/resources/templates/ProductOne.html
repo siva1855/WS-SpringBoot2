@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>BootMVC</title>
+</head>
+<body>
+	<h2>Products Data Page</h2>
+	<table border="1">
+		<tr>
+			<th>Product ID</th>
+			<td th:text="${oneProductData.productId}"></td>
+		</tr>
+		<tr>
+			<th>Product Name</th>
+			<td th:text="${oneProductData.productName}"></td>
+		</tr>
+		<tr>
+			<th>Product Cost</th>
+			<td th:text="${oneProductData.productCost}"></td>
+		</tr>
+		<tr>
+
+			<th>Product GST</th>
+			<td th:text="${oneProductData.productGst}"></td>
+		</tr>
+
+		<tr>
+			<th>Product Discount</th>
+			<td th:text="${oneProductData.productDiscount}"></td>
+		</tr>
+	</table>
+	
+</body>
+</html>

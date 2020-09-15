@@ -1,0 +1,6 @@
+applications:
+- name: BootProductApp
+  memory: 900M
+  path: target/Boot12-MVC-UI-Template-Thymeleaf-CURD-MySqlDB-1.0.war.original
+  services:
+  - annapurnamysqldb

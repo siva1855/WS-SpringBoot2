@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>BootMVC</title>
+</head>
+<body>
+	Hello <span th:text="${message}"></span>
+	<hr />
+	<span th:text="${listData}"></span>
+	<hr />
+	<span th:text="${alData}"></span>
+	<hr />
+
+	<table border="1">
+		<tr th:each="object1:${listData}">
+			<td th:text="${object1}"></td>
+		</tr>
+	</table>
+	<hr />
+	<table border="2">
+		<tr th:each="object2:${alData}">
+			<td th:text="${object2}"></td>
+		</tr>
+	</table>
+</body>
+</html>

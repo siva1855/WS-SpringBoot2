@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+<meta charset="ISO-8859-1">
+<title>BootMVC</title>
+</head>
+<body>
+	<h2>Welcome To Products Register Page</h2>
+	<form th:action="@{/product/save}" method="POST" th:Object="${product}">
+		<pre>
+           Product Name:<input type="text" th:field="*{productName}" />
+           Product Cost:<input type="text" th:field="*{productCost}" />
+           Product GST:<input type="text" th:field="*{productGst}" />
+           Discount:<input type="text" th:field="*{productDiscount}" />
+         
+                      <input type="submit" value="Create" />
+       </pre>
+	</form>
+	<span th:text="${saveMessage}"></span>
+</body>
+</html>
